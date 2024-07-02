@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(2, 209, 251);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body h1{
+    font-size: 3rem;
+    padding: 1vw 0vw;
+    font-family: sans-serif;
+}
+.main{
+    max-width: 500px;
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+}
+#display{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    /* height: 100px; */
+    color: white;
+    background-color: rgb(30, 30, 30);
+    border: none;
+    font-size: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.btns{ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 30px;
+    overflow: hidden;
+}
+button{
+    height: 83px;
+    width: 83px;
+    border-radius: 50%;
+    border: none;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(56, 54, 54);
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(184, 182, 182);
+}
+button:active{
+    background-color: rgb(189, 187, 187);
+}
+.operators{
+    background-color: rgb(237, 155, 2);
+}
+.operators:hover{
+    background-color: rgb(231, 150, 1);
+    color: white;
+}
+.operators:active{
+    background-color: rgb(200, 192, 175);
+}
+
+@media (max-width: 470px){
+    body h1{
+        font-size: 2.5rem;
+        padding: 1.5vw 0vw;
+    }
+    .main{
+        max-width: 400px;
+    }
+    .btns{ 
+        gap: 14px;
+        padding: 30px;
+    }
+    button{
+        height: 78px;
+        width: 78px;
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 405px){
+    body h1{
+        font-size: 2.5rem;
+        padding: 1vw 0vw;
+    }
+    .main{
+        max-width: 340px;
+    }
+    .btns{ 
+        gap: 18px;
+        padding: 35px;
+    }
+    button{
+        height: 58px;
+        width: 58px;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 345px){
+    
+    body h1{
+        font-size: 2.5rem;
+        padding: 5vw 0vw;
+    }
+    .main{
+        max-width: 280px;
+    }
+    .btns{ 
+        gap: 20px;
+        padding: 25px;
+    }
+    button{
+        height: 45px;
+        width: 45px;
+        font-size: 2rem;
+    }
+}
